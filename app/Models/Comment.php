@@ -38,7 +38,7 @@ class Comment extends Model
      */
     public function showRoute(array $parameters = [])
     {
-        //return route('posts.show.comment', [$this->post_id, Str::slug($this->post->title), $this, ...$parameters]);
+        return route('posts.show.comment', [$this->post_id, Str::slug($this->post->title), $this, ...$parameters]);
     }
 
     public function loadReplies(int $limit = 3, ?int $renderedReplyId = null)

@@ -45,6 +45,6 @@ class Post extends Model
      */
     public function showRoute(array $parameters = [])
     {
-        //return route('posts.show', [$this, Str::slug($this->title), ...$parameters]);
+        return route('posts.show', [$this, Str::slug($this->title), ...$parameters]);
     }
 }
